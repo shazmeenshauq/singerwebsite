@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #333;
+
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  margin-top: 10%;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  background-color: #34b3a0;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.tour {
+  min-height: 90vh;
+  background: url('img/person-singing-1370545.jpg') center/cover no-repeat;
+  padding-left: 0;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.tour h1 {
+  margin-top: 20%;
+  font-size: 4rem;
+}
+
+.book-tour {
+  min-height: 50vh;
+  background: #f2eff3;
+  font-size: 4em;
+}
+.tour-coloumn {
+  overflow: hidden;
+  text-align: center;
+}
+.watch-on-netflix {
+  min-height: 90vh;
+  background: url('img/netflix-watch.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.watch-on-netflix h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20%;
+}
+.watch-on-netflix p {
+  text-decoration: none;
+  color: red;
+}
+.watch-on-netflix p {
+  font-size: 3rem;
+}
+
+/* Footer */
+footer {
+  min-height: 10vh;
+  background-color: whitesmoke;
+
+  text-align: center;
+
+  padding: 1em;
+  width: auto;
+  overflow: hidden;
+}
+footer li {
+  display: inline;
+}
+.fab {
+  padding: 6px;
+  font-size: 20px;
+  width: 38px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fab:hover {
+  color: rgb(212, 208, 208);
+  opacity: 1;
+}
+.fa-facebook-f {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: red;
+}
+/* Media queries */
+@media (max-width: 960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
